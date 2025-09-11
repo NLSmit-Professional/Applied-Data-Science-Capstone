@@ -18,3 +18,7 @@ see spacex_web_scraped.csv
 ## Data Wrangling
 import data from csv directly using pandas library
 see dataset_part_2.csv
+
+
+## Complete the EDA with SQL
+usinhg sqlite
