@@ -22,3 +22,23 @@ see dataset_part_2.csv
 
 ## Complete the EDA with SQL
 usinhg sqlite
+
+```python
+%load_ext sql
+
+%sql sqlite:///:memory: # in-memory
+#OR 
+%sql sqlite:///data.db # file-based
+
+df = pd.read_csv("---.csv")
+# use the default connection from %sql (it's available as a global after connecting) 
+## ELSE `con = sqlite3.connect(':memory:')` 
+### BUT %sql handles this
+df.to_sql("SQLdata", con, if_exists='replace', index=False,method="multi")
+
+%%sql # OR %sql
+CREATE TABLE example as SELECT * FROM SQLdata # duplicate data into new table
+```
+
+
+## EDA with Visualization Lab
