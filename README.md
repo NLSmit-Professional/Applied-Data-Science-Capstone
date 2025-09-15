@@ -42,3 +42,6 @@ CREATE TABLE example as SELECT * FROM SQLdata # duplicate data into new table
 
 
 ## EDA with Visualization Lab
+
+
+## Interactive Visual Analytics with Folium Lab
